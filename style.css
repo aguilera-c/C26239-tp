@@ -1,0 +1,283 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #824c109e; 
+    color: #4a3b32; 
+    padding-top: 90px; 
+    line-height: 1.7;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+header {
+    background-color: #824d1003;
+    backdrop-filter: blur(10px); 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid  #824d10b3;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+
+.logo-texto {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #4a2c11; 
+}
+
+.menu-nav {
+    list-style:none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu-nav a {
+    color:  #4a2c11;
+    text-decoration:none;
+    font-weight: 500;
+    font-size: 22px;
+    transition: color 0.2s ease;
+}
+
+.menu-nav a:hover {
+    color: #0b0b0b; 
+}
+
+/* --- TIPOGRAFÍAS Y ELEMENTOS GENERALES --- */
+section {
+    padding: 50px 0;
+    scroll-margin-top: 100px; 
+}
+
+h1 { 
+    font-size: 42px;
+    font-weight: 700;
+    color: #4a2c11;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h2 { 
+    font-size: 28px;
+    font-weight: 600;
+    color: #5c3a21;
+    margin-bottom: 15px;
+}
+
+p.introduccion {
+    font-size: 18px;
+    color: #6e543f;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #8B5A2B;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(139, 90, 43, 0.2);
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #5c3a21;
+}
+
+/* --- HISTORIA DE MARLON --- */
+.seccion-marlon {
+    background-color: #5c3a21; 
+    border: 1px solid #eadecc;
+    border-radius: 16px;
+    padding: 40px;
+    margin: 20px 0;
+}
+
+.marlon-flex {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.marlon-texto {
+    flex: 2;
+    min-width: 300px;
+}
+
+.marlon-texto h2 {
+    color: #8B5A2B;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.caja {
+    background-color: #ffffff;
+    border: 1px solid #efe6da;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(92, 58, 33, 0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.caja:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 12px 24px rgba(92, 58, 33, 0.08);
+}
+
+.foto-tarjeta {
+    width: 100%;
+    aspect-ratio: 4 / 3; 
+    object-fit: cover; 
+    border-radius: 8px;
+    border: 1px solid #efe6da;
+}
+
+.caja h3 {
+    color: #4a2c11;
+    font-size: 20px;
+}
+
+.caja p {
+    color: #6e543f;
+    font-size: 14px;
+}
+
+.caja strong {
+    color: #8B5A2B;
+}
+
+/* --- FORMULARIO--- */
+.seccion-contacto {
+    border-top: 1px solid #eadecc;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+
+.formulario {
+    background-color: white;
+    border: 1px solid #efe6da;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo-grupo label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #5c3a21;
+}
+
+.campo-grupo input, 
+.campo-grupo textarea {
+    padding: 12px;
+    font-family: inherit;
+    border: 1px solid #d1bfab;
+    border-radius: 6px;
+    background-color: #fafafa;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.campo-grupo input:focus, 
+.campo-grupo textarea:focus {
+    outline: none;
+    border-color: #8B5A2B;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(139, 90, 43, 0.1);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #8B5A2B;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #5c3a21;
+}
+
+
+footer {
+    background-color: #4a2c11;
+    color: #fcf9f5;
+    padding: 30px 0;
+    font-size: 14px;
+    margin-top: 60px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 140px; 
+    }
+    section {
+        scroll-margin-top: 150px; 
+    }
+    .header-flex {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .seccion-marlon {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas a Salvo — Pre-entrega</title>
+
+    <!-- Fuente de Google -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor header-flex">
+           
+            <h1 class="logo-texto">
+                ¡Patitas a Salvo!
+            </h1>
+            
+            <!-- menu -->
+            <nav>
+                <ul class="menu-nav">
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Historia-Marlon">Inspiración</a></li>
+                    <li><a href="#Nuestros-Rescatados">Rescatados</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor">
+
+        
+        <section id="Inicio">
+            <h1>Dejan una huella en tu vida,<br>cambiales la suya.</h1>
+            <p class="introduccion">Bienvenidos a nuestro espacio. Nos dedicamos a rescatar, rehabilitar y encontrar familias para animales abandonados o en situación de vulnerabilidad. Creemos firmemente en las segundas oportunidades.</p>
+            <a href="#Nuestros-Rescatados" class="btn">Conocer Rescatados</a>
+        </section>
+
+        
+        <section id="Historia-Marlon" class="seccion-marlon">
+            <div class="marlon-flex">
+                <img src="marlon.jpg.jpeg" alt="Marlon, perro salchicha marrón" style="width: 100%; max-width: 320px; aspect-ratio: 1 / 1; border-radius: 12px; object-fit: cover;">
+                <div class="marlon-texto">
+                    <h2>Marlon, Nuestra Inspiración</h2>
+                    <p>Marlon fue un tierno perro salchicha de color marrón que se convirtió en el motor, el corazón y el primer gran embajador de este proyecto. Su mirada noble y su lealtad incondicional nos enseñaron el verdadero valor de cuidar a quienes no tienen voz.</p>
+                    <p>A través de su recuerdo y su hermosa huella, aprendimos que cada animal merece un hogar donde ser amado. Patitas a Salvo nace en su honor, buscando que su legado siga transformando realidades y salvando vidas.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="Nuestros-Rescatados">
+            <h2>Buscan un hogar</h2>
+            <p style="color: #6e543f; margin-bottom: 20px;">Todos los animales se entregan vacunados, desparasitados y castrados.</p>
+            
+            <div class="grid">
+                <!-- Catalina -->
+                <article class="caja">
+                    <img src="catalina.jpg.jpeg" alt="Gata Catalina de 21 años" class="foto-tarjeta">
+                    <h3>Catalina</h3>
+                    <p><strong>Gata — 21 años.</strong> Una abuelita adorable, sumamente tranquila. Ideal para un espacio sereno donde recibir mimos en el sillón sin niños ni perros.</p>
+                </article>
+
+                <!-- Rata -->
+                <article class="caja">
+                    <img src="rata.jpg.jpeg" alt="Gata Rata de 10 años" class="foto-tarjeta">
+                    <h3>Rata</h3>
+                    <p><strong>Gata — 10 años.</strong> Mucha personalidad en una gata madura y súper compañera. Excelente para hacerte compañía silenciosa durante tus días.</p>
+                </article>
+
+                <!-- Negra e India -->
+                <article class="caja">
+                    <img src="hermanas.jpg.jpeg" alt="Gatas hermanas Negra e India" class="foto-tarjeta">
+                    <h3>Negra e India</h3>
+                    <p><strong>Gatas — 13 años.</strong> Hermanas inseparables. Se van únicamente en adopción conjunta para continuar compartiendo su tierno vínculo de toda la vida.</p>
+                </article>
+
+                <!-- Nerón -->
+                <article class="caja">
+                    <img src="neron.jpg.jpeg" alt="Perro Nerón de 12 años" class="foto-tarjeta">
+                    <h3>Nerón</h3>
+                    <p><strong>Perro — 12 años.</strong> Ejemplar mestizo y callejero de alma noble. Es castrado, muy equilibrado y busca la estabilidad de una familia definitiva.</p>
+                </article>
+
+                <!-- Volt -->
+                <article class="caja">
+                    <img src="volt.jpg.jpeg" alt="Perro Volt de 10 años" class="foto-tarjeta">
+                    <h3>Volt</h3>
+                    <p><strong>Perro — 10 años.</strong> Castrado, activo y con un entusiasmo admirable. Le fascina correr y salir de paseo; ideal para integrarse a una rutina dinámica.</p>
+                </article>
+            </div>
+        </section>
+
+        <!--CONTACTO -->
+        <section id="Contacto" class="seccion-contacto">
+            <h2>Formulario de Adopción</h2>
+            <p class="introduccion">¿Querés adoptar a alguno de los chicos o postularte como voluntario? Completá tus datos y nos comunicamos con vos.</p>
+            
+            <form action="https://formspree.io" method="POST" class="formulario">
+                <div class="campo-grupo">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="patitas@gmail.com" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="mensaje">¿Por qué te gustaría adoptar / ayudar?</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos brevemente tu situación o el animal de tu interés..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Solicitud</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="contenedor text-center">
+            <p>© 2026 Patitas a Salvo — Pre-Entrega.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
