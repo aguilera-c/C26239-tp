@@ -114,7 +114,7 @@ p.introduccion {
 
 /* --- HISTORIA DE MARLON --- */
 .seccion-marlon {
-    background-color: #5c3a21; 
+    background-color: #5c3a21a5; 
     border: 1px solid #eadecc;
     border-radius: 16px;
     padding: 40px;
@@ -134,7 +134,7 @@ p.introduccion {
 }
 
 .marlon-texto h2 {
-    color: #8B5A2B;
+    color: #5a320c;
 }
 
 
